@@ -41,4 +41,16 @@ public class Point {
         this.y = y;
     }
 
+    public double distance(int x , int y) {
+        return Math.pow(Math.pow(this.x - x, 2) + (Math.pow(this.y - y, 2)), 0.5);
+    }
+
+    public double distance(Point another) {
+        return Math.pow(Math.pow(this.x - another.x, 2) + (Math.pow(this.y - another.y, 2)), 0.5);
+    }
+
+    public double distance() {
+        return Math.pow(Math.pow(this.x, 2) + (Math.pow(this.y, 2)), 0.5);
+    }
+
 }
